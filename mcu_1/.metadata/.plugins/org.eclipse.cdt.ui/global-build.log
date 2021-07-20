@@ -1,0 +1,75 @@
+13:31:13 **** Build of configuration Debug for project try_1 ****
+make all 
+'Building file: ../src/try_1.cpp'
+'Invoking: Cross G++ Compiler'
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/try_1.d" -MT"src/try_1.o" -o "src/try_1.o" "../src/try_1.cpp"
+'Finished building: ../src/try_1.cpp'
+' '
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+13:31:26 **** Incremental Build of configuration Debug for project 001_helloworld ****
+make -j12 all 
+arm-none-eabi-size   001_helloworld.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3660	    108	   1596	   5364	   14f4	001_helloworld.elf
+Finished building: default.size.stdout
+ 
+13:31:27 **** Incremental Build of configuration Debug for project 002SampleApp ****
+make -j12 all 
+arm-none-eabi-size   002SampleApp.elf 
+   text	   data	    bss	    dec	    hex	filename
+   6608	    180	   1596	   8384	   20c0	002SampleApp.elf
+Finished building: default.size.stdout
+ 
+13:31:27 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+13:31:38 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+13:37:06 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+13:37:17 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+13:37:57 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+13:38:02 **** Incremental Build of configuration Debug for project 001_helloworld ****
+make -j12 all 
+arm-none-eabi-size   001_helloworld.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3660	    108	   1596	   5364	   14f4	001_helloworld.elf
+Finished building: default.size.stdout
+ 
+13:38:36 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '

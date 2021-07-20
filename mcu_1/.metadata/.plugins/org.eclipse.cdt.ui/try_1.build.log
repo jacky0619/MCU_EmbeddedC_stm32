@@ -1,0 +1,10 @@
+13:38:36 **** Incremental Build of configuration Debug for project try_1 ****
+make all 
+'Building target: try_1'
+'Invoking: Cross G++ Linker'
+g++  -o "try_1"  ./src/try_1.o   
+'Finished building target: try_1'
+' '
+
+13:38:36 Build Finished. 0 errors, 0 warnings. (took 480ms)
+
