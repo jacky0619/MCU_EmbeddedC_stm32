@@ -1,75 +1,20 @@
-13:31:13 **** Build of configuration Debug for project try_1 ****
-make all 
-'Building file: ../src/try_1.cpp'
-'Invoking: Cross G++ Compiler'
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/try_1.d" -MT"src/try_1.o" -o "src/try_1.o" "../src/try_1.cpp"
-'Finished building: ../src/try_1.cpp'
-' '
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
-13:31:26 **** Incremental Build of configuration Debug for project 001_helloworld ****
+01:54:37 **** Build of configuration Debug for project 004_PeriClockEnable ****
 make -j12 all 
-arm-none-eabi-size   001_helloworld.elf 
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f407vgtx.d" -MT"Startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f407vgtx.o" "../Startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F407VGTx -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "004_PeriClockEnable.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32\MCU1_course\mcu_1\004_PeriClockEnable\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004_PeriClockEnable.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004_PeriClockEnable.elf
+ 
+arm-none-eabi-size   004_PeriClockEnable.elf 
+arm-none-eabi-objdump -h -S  004_PeriClockEnable.elf  > "004_PeriClockEnable.list"
+arm-none-eabi-objcopy  -O binary  004_PeriClockEnable.elf  "004_PeriClockEnable.bin"
    text	   data	    bss	    dec	    hex	filename
-   3660	    108	   1596	   5364	   14f4	001_helloworld.elf
+    716	      8	   1568	   2292	    8f4	004_PeriClockEnable.elf
 Finished building: default.size.stdout
  
-13:31:27 **** Incremental Build of configuration Debug for project 002SampleApp ****
-make -j12 all 
-arm-none-eabi-size   002SampleApp.elf 
-   text	   data	    bss	    dec	    hex	filename
-   6608	    180	   1596	   8384	   20c0	002SampleApp.elf
-Finished building: default.size.stdout
+Finished building: 004_PeriClockEnable.list
+Finished building: 004_PeriClockEnable.bin
  
-13:31:27 **** Incremental Build of configuration Debug for project try_1 ****
-make all 
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
-13:31:38 **** Incremental Build of configuration Debug for project try_1 ****
-make all 
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
-13:37:06 **** Incremental Build of configuration Debug for project try_1 ****
-make all 
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
-13:37:17 **** Incremental Build of configuration Debug for project try_1 ****
-make all 
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
-13:37:57 **** Incremental Build of configuration Debug for project try_1 ****
-make all 
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
-13:38:02 **** Incremental Build of configuration Debug for project 001_helloworld ****
-make -j12 all 
-arm-none-eabi-size   001_helloworld.elf 
-   text	   data	    bss	    dec	    hex	filename
-   3660	    108	   1596	   5364	   14f4	001_helloworld.elf
-Finished building: default.size.stdout
  
-13:38:36 **** Incremental Build of configuration Debug for project try_1 ****
-make all 
-'Building target: try_1'
-'Invoking: Cross G++ Linker'
-g++  -o "try_1"  ./src/try_1.o   
-'Finished building target: try_1'
-' '
