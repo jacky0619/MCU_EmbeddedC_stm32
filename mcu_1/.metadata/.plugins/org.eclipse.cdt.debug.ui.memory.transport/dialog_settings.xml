@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="EXPORT_DIALOG">
+		<item key="Start" value="0x20000000"/>
+		<item key="End" value="0x20000010"/>
+		<item key="Initial address" value="0x800029e"/>
+		<item key="File" value="C:\onedrive\OneDrive - 國立成功大學\桌面\ttttt"/>
+		<item key="SELECTED_EXPORTER" value="PlainTextExporter"/>
+	</section>
+</section>

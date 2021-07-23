@@ -1220,11 +1220,11 @@ LOAD c:/st/stm32cubeide_1.6.1/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_macro   0x0000000000002849      0x103 Src/sysmem.o
  .debug_macro   0x000000000000294c      0x1df Src/sysmem.o
 
-.debug_line     0x0000000000000000     0x14b4
- .debug_line    0x0000000000000000      0x740 Src/main.o
- .debug_line    0x0000000000000740      0x7fd Src/syscalls.o
- .debug_line    0x0000000000000f3d      0x4f3 Src/sysmem.o
- .debug_line    0x0000000000001430       0x84 Startup/startup_stm32f407vgtx.o
+.debug_line     0x0000000000000000     0x14b6
+ .debug_line    0x0000000000000000      0x742 Src/main.o
+ .debug_line    0x0000000000000742      0x7fd Src/syscalls.o
+ .debug_line    0x0000000000000f3f      0x4f3 Src/sysmem.o
+ .debug_line    0x0000000000001432       0x84 Startup/startup_stm32f407vgtx.o
 
 .debug_str      0x0000000000000000     0x9741
  .debug_str     0x0000000000000000     0x76da Src/main.o

@@ -35,6 +35,7 @@ void swap_numbers(int *x,int *y)
      *x=*y;
      *y=temp;
 
+     /*  這邊是給第22個影片 call stack fault analyzer */
 #if 0
      void (*jump_addr) (void);
      jump_addr = (void*)0x20000009;
