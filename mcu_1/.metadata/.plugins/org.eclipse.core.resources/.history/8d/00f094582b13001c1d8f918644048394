@@ -25,9 +25,11 @@
 
 #include <stdio.h>
 
+extern void initialise_monitor_handles(void);
 
 int main(void)
 {
+	initialise_monitor_handles();
 
 	int arr[5] = {1,3,5,7,9};
 	for(int i=0;i<5;i++)

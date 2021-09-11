@@ -597,3 +597,7 @@
 2021-09-11 12:13:58,742 [INFO] ApiDb:280 - User favorites MCUs=[]
 2021-09-11 12:13:58,744 [INFO] ApiDb:276 - Save user favorites file C:\Users\cho/.stm32cubeide/favorites.boards.txt: 1 item(s)
 2021-09-11 12:13:58,744 [INFO] ApiDb:280 - User favorites Boards=[STM32F407G-DISC1]
+2021-09-12 01:03:58,883 [INFO] Activator:170 - 
+
+
+2021-09-12 01:03:58,886 [INFO] Activator:171 - !SESSION log4j initialized
