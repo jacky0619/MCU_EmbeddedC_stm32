@@ -86,13 +86,13 @@ Microcontroller and Embedded Driver
 **variables windows**
 ![](https://i.imgur.com/fufKxvV.png)
 ----
-**expressions windows**
+3. **expressions windows**
 ![](https://i.imgur.com/4uvO40o.png)
 4. **Memory browser**
 ![](https://i.imgur.com/3yaXtNt.png)
 -------
 ![](https://i.imgur.com/LWNSuyy.png)
-6. **Disassembly**
+5. **Disassembly**
 ![](https://i.imgur.com/g7yL56r.png)
 
 
