@@ -79,21 +79,21 @@ Microcontroller and Embedded Driver
  ![](https://i.imgur.com/dHvTqcd.png)
 
 ## debug_options
-1. **step into / step over / step return**
-![](https://i.imgur.com/xRxf8aK.png)
-2. **Expression and variables windows**
-![](https://i.imgur.com/rn9TTKB.png)
-**variables windows**
-![](https://i.imgur.com/fufKxvV.png)
+1. **step into / step over / step return**  
+![](https://i.imgur.com/xRxf8aK.png)  
+2. **Expression and variables windows**  
+![](https://i.imgur.com/rn9TTKB.png)  
+**variables windows**  
+![](https://i.imgur.com/fufKxvV.png)  
 ----
-3. **expressions windows**
-![](https://i.imgur.com/4uvO40o.png)
-4. **Memory browser**
-![](https://i.imgur.com/3yaXtNt.png)
+**expressions windows**  
+![](https://i.imgur.com/4uvO40o.png)  
+4. **Memory browser**  
+![](https://i.imgur.com/3yaXtNt.png)  
 -------
-![](https://i.imgur.com/LWNSuyy.png)
-5. **Disassembly**
-![](https://i.imgur.com/g7yL56r.png)
+![](https://i.imgur.com/LWNSuyy.png)  
+5. **Disassembly**  
+![](https://i.imgur.com/g7yL56r.png)  
 
 
 ## USB_analyzer
