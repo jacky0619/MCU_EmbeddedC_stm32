@@ -279,3 +279,46 @@ Finished building: 001_helloworld.bin
 Finished building: 001_helloworld.list
  
  
+02:52:36 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make all 
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32\MCU1_course\mcu_1\stm32f4xx_drivers\LinkerScript.ld" -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon  -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30140	   2516	   1360	  34016	   84e0	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+02:54:08 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make all 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+Finished building: stm32f4xx_drivers.list
+ 
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+Finished building: stm32f4xx_drivers.bin
+ 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30140	   2516	   1360	  34016	   84e0	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 
+03:30:44 **** Incremental Build of configuration Debug for project stm32f4xx_drivers ****
+make all 
+arm-none-eabi-gcc "../src/017rtc_lcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F407G_DISC1 -DDEBUG -c -I"C:/STM32/MCU1_course/mcu_1/stm32f4xx_drivers/drivers/inc" -I"C:/STM32/MCU1_course/mcu_1/stm32f4xx_drivers/bsp" -I"C:/ST/STM32CubeIDE_1.6.1/STM32CubeIDE/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_1.5.0.202011040924/tools/arm-none-eabi/include/newlib-nano" -O0 -ffunction-sections -Wall -fstack-usage -MMD -MP -MF"src/017rtc_lcd.d" -MT"src/017rtc_lcd.o"  -mfloat-abi=soft -mthumb -o "src/017rtc_lcd.o"
+../src/017rtc_lcd.c:97:13: warning: 'mdelay' defined but not used [-Wunused-function]
+   97 | static void mdelay(uint32_t cnt)
+      |             ^~~~~~
+arm-none-eabi-gcc -o "stm32f4xx_drivers.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\STM32\MCU1_course\mcu_1\stm32f4xx_drivers\LinkerScript.ld" -Wl,-Map="stm32f4xx_drivers.map" -Wl,--gc-sections -static -specs=rdimon.specs -lc -lrdimon  -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: stm32f4xx_drivers.elf
+ 
+arm-none-eabi-objdump -h -S  stm32f4xx_drivers.elf  > "stm32f4xx_drivers.list"
+Finished building: stm32f4xx_drivers.list
+ 
+arm-none-eabi-objcopy  -O binary  stm32f4xx_drivers.elf  "stm32f4xx_drivers.bin"
+Finished building: stm32f4xx_drivers.bin
+ 
+arm-none-eabi-size   stm32f4xx_drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+  30140	   2516	   1360	  34016	   84e0	stm32f4xx_drivers.elf
+Finished building: default.size.stdout
+ 

@@ -3903,24 +3903,24 @@ int main(void)
  8001eb6:	2001      	movs	r0, #1
  8001eb8:	f7ff ff0c 	bl	8001cd4 <init_systick_timer>
 
-	current_date.day = FRIDAY;
- 8001ebc:	2306      	movs	r3, #6
+	current_date.day = SUNDAY;
+ 8001ebc:	2301      	movs	r3, #1
  8001ebe:	71fb      	strb	r3, [r7, #7]
-	current_date.date = 15;
- 8001ec0:	230f      	movs	r3, #15
+	current_date.date = 10;
+ 8001ec0:	230a      	movs	r3, #10
  8001ec2:	713b      	strb	r3, [r7, #4]
-	current_date.month = 1;
- 8001ec4:	2301      	movs	r3, #1
+	current_date.month = 9;
+ 8001ec4:	2309      	movs	r3, #9
  8001ec6:	717b      	strb	r3, [r7, #5]
 	current_date.year = 21;
  8001ec8:	2315      	movs	r3, #21
  8001eca:	71bb      	strb	r3, [r7, #6]
 
-	current_time.hours = 11;
- 8001ecc:	230b      	movs	r3, #11
+	current_time.hours = 23;
+ 8001ecc:	2317      	movs	r3, #23
  8001ece:	72bb      	strb	r3, [r7, #10]
-	current_time.minutes = 59;
- 8001ed0:	233b      	movs	r3, #59	; 0x3b
+	current_time.minutes = 58;
+ 8001ed0:	233a      	movs	r3, #58	; 0x3a
  8001ed2:	727b      	strb	r3, [r7, #9]
 	current_time.seconds = 30;
  8001ed4:	231e      	movs	r3, #30

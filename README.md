@@ -83,14 +83,15 @@ Microcontroller and Embedded Driver
 ![](https://i.imgur.com/xRxf8aK.png)  
 2. **Expression and variables windows**  
 ![](https://i.imgur.com/rn9TTKB.png)  
+<br> 
 **variables windows**  
 ![](https://i.imgur.com/fufKxvV.png)  
-----
+<br>
 **expressions windows**  
 ![](https://i.imgur.com/4uvO40o.png)  
 4. **Memory browser**  
 ![](https://i.imgur.com/3yaXtNt.png)  
--------
+<br>
 ![](https://i.imgur.com/LWNSuyy.png)  
 5. **Disassembly**  
 ![](https://i.imgur.com/g7yL56r.png)  
@@ -161,8 +162,12 @@ Microcontroller and Embedded Driver
 1
 1
 ## RTC_on_LCD 
-1111
-1
+1. connections
+![](https://i.imgur.com/MJTt0ob.jpg)
+2. 
+5. Then we can see the current time and current date messeges setting in semihosting. 
+![](https://i.imgur.com/wcXIygV.png)
+
 1
 1
 1

@@ -131,13 +131,13 @@ int main(void)
 
 	init_systick_timer(1);
 
-	current_date.day = SUNDAY;
-	current_date.date = 10;
-	current_date.month = 9;
+	current_date.day = FRIDAY;
+	current_date.date = 15;
+	current_date.month = 1;
 	current_date.year = 21;
 
-	current_time.hours = 23;
-	current_time.minutes = 58;
+	current_time.hours = 11;
+	current_time.minutes = 59;
 	current_time.seconds = 30;
 	current_time.time_format = TIME_FORMAT_12HRS_PM;
 
