@@ -322,3 +322,17 @@ arm-none-eabi-size   stm32f4xx_drivers.elf
   30140	   2516	   1360	  34016	   84e0	stm32f4xx_drivers.elf
 Finished building: default.size.stdout
  
+21:59:11 **** Build of configuration Debug for project 005_HSI_Measurement ****
+make -j12 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 
+22:09:31 **** Incremental Build of configuration Debug for project 005_HSI_Measurement ****
+make -j12 all 
+arm-none-eabi-size   005_HSI_Measurement.elf 
+   text	   data	    bss	    dec	    hex	filename
+    792	      8	   1568	   2368	    940	005_HSI_Measurement.elf
+Finished building: default.size.stdout
+ 

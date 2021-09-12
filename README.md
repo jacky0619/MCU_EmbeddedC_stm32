@@ -29,19 +29,16 @@ Microcontroller and Embedded Driver
 ## Online course
 [Udemy link](https://www.udemy.com/course/mastering-microcontroller-with-peripheral-driver-development/)
 
-## Catalog
-* [GPIO](#GPIO)
-* [SPI](#SPI)
-
 ## What I learned in this tutorial
 | Features          | descriptions            | link                  |
 | ----------------- |:----------------------- |:----------------------|
 | SWV & Semihosting | liddd                   |[SWV](#SWV_Semihosting)         |
-| debug options     |                         |[debug options](#debug_options) |
-| USB analyzer      |                         |[analyzer](#USB_analyzer)       |
-| bus interface     |                         |[bus](#bus_interface)           |
-| clock tree        |                         |[GPIO](#GPIO)                   |
-| GPIO              |                         |[clock](#clock_tree)            |
+| Debug options     |                         |[Debug options](#Debug_options) |
+| USB analyzer      |                         |[Analyzer](#USB_analyzer)       |
+| Bus interface     |                         |[Bus](#Bus_interface)           |
+| Clock tree        |                         |[Clock tree ](#Clock_tree )     |
+| Vector table      |                         |[Vector table](#Vector_table)   |
+| GPIO              |                         |[GPIO](#GPIO)                   |
 | SPI               |                         |[SPI](#SPI)                     |
 | I2C               |                         |[I2C](#I2C)                     |
 | UART              |                         |[UART](#UART)                   |
@@ -109,24 +106,37 @@ Microcontroller and Embedded Driver
 
 
 ## USB_analyzer
-1 
-1
-1
-1
-1
+*  The USB_analyzer Which I used in this project.  
+![](https://i.imgur.com/6G2hYkw.png)
+* [Sigrok Pulseview](https://sigrok.org/): Open-Source signal analysis software.
+![](https://i.imgur.com/eLzY8CO.jpg)
 
-1
-1
-## bus_interface 
-1 
-1
-1
-1
-1
 
-1
-1
-## clock_tree 
+1. USB logic analyzer as its name indicates, you can **connect this device to PC over USB communication**.
+2. USB logic analyzers are **low-cost solution** to your digital oscilloscope.
+3. It is a **debugging hardware** which is used to **trace various signals** of the microcontroller peripherals such as I2C, SPI, UART and other peripherals.
+4. This is actually **8 channel, 24 MHz**, so that means the maximum signal frequency should be within 24 MHz.
+5. 
+## Bus_interface 
+* The processor and the peripherals they actually talk via the **bus interfaces**.  
+* The processor contains three external **Advanced High-performance Bus (AHB)**-Lite bus interfaces and one **Advanced Peripheral Bus (APB) interface**.
+<br>
+![](https://i.imgur.com/bgGtLbg.png)
+
+- I-BUS: Instruction Buses
+![](https://i.imgur.com/LakpmSh.png)
+- D-BUS: Data buses
+![](https://i.imgur.com/m8NYLZo.png)
+- S-BUS: System buses
+![](https://i.imgur.com/ksMZXjq.png)
+
+
+* **Instructions, Constant data and vector tables** will get stored in **Flash Memory**.
+* **Instruction memory** will go through **I-Bus**, **Constant data** will go through **D-bus**.
+![](https://i.imgur.com/FVcMs5o.png)
+
+
+## Clock_tree 
 
 > In the [reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf)  
 ![](https://i.imgur.com/DBOEi40.png)
@@ -147,23 +157,39 @@ Microcontroller and Embedded Driver
 * We can see the clock information in IDE in **Clock Configuration**.  
 ![](https://i.imgur.com/AHcRn5k.png)
 
-1
-1
-1
-1
-1
-1
+## Vector_table
+* We can see the vector table in [reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf).  
+![](https://i.imgur.com/WSwum1M.png)  
+* The nested vector interrupt controller NVIC includes 82 maskable interrupt channels.
+* All interrupts including the core exceptions are managed by the NVIC.
 
 ## GPIO
-1
-1
-1
-1
-1
-1
-1
-1
+* **GPIO input mode with **pull-up/down** state**
+    * There are **configuration registers** for every GPIO port which enables you to handle internal pull up or pull down resistors.
+    ![](https://i.imgur.com/7NmFx07.jpg)
+    [image reference](https://community.st.com/sfc/servlet.shepherd/version/renditionDownload?rendition=THUMB720BY480&versionId=0680X000009rlIB&operationContext=CHATTER&contentId=05T0X00000YMT7o&page=0)
 
+* **GPIO output mode with **open drain** state**
+    * There is just a **single NMOS transistor**. When the transistor is **switched ON**, the pin is **pulled to ground**. And when this transistor is **OFF**, the drain of the transistor will be **floating or open**.
+    ![](https://i.imgur.com/dMZajvj.png)
+    [image reference](https://www.udemy.com/course/mastering-microcontroller-with-peripheral-driver-development/)
+    * To make use of open-drain in a real world application, it has to be used along with either **internal pull up or external pull up resistor**.
+    ![](https://i.imgur.com/uhJi62F.png)
+    [image reference](https://www.udemy.com/course/mastering-microcontroller-with-peripheral-driver-development/)
+    ![](https://i.imgur.com/vGRsa2B.png)
+
+* **GPIO Registers**
+    * We can find various register details and the **offset address** of GPIO registers here.
+    ![](https://i.imgur.com/oHCfYyp.png)
+
+* **GPIO Alternate functionality register**
+    * When GPIO pin is in alternate functionality mode it can be used for 16 different functionalities from AF0 to AF15.
+    ![](https://i.imgur.com/f2qzVTi.png)
+
+
+* **The handle structure and configuration structure of GPIO pin**.
+    ![](https://i.imgur.com/JdxEpVP.png)
+ 
 ## SPI
 1
 1
@@ -202,3 +228,4 @@ Microcontroller and Embedded Driver
 ![](https://i.imgur.com/wcXIygV.png)  
 6. Practical connections with STM32F407, LCD, DS1307 and 10K potentiometer
 ![](https://i.imgur.com/R0wCf6T.jpg)
+
