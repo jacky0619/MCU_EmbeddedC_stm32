@@ -8,7 +8,7 @@
 #define SYSTICK_TIM_CLK   16000000UL
 
 /* Enable this macro if you want to test RTC on LCD */
-#define PRINT_LCD //////
+//#define PRINT_LCD //////
 
 
 void init_systick_timer(uint32_t tick_hz)

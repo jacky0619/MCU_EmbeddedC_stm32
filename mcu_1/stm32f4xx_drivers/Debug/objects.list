@@ -1,4 +1,5 @@
 "bsp/ds1307.o"
+"bsp/lcd.o"
 "drivers/src/stm32f407xx_gpio_driver.o"
 "drivers/src/stm32f407xx_i2c_driver.o"
 "drivers/src/stm32f407xx_rcc_driver.o"

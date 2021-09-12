@@ -99,12 +99,12 @@ static void mdelay(uint32_t cnt)
 	for(uint32_t i=0 ; i < (cnt * 1000); i++);
 }
 
-extern void initialise_monitor_handles(void);//////
+//extern void initialise_monitor_handles(void);//////
 
 int main(void)
 {
 	/* semihosting test*/
-	initialise_monitor_handles();
+	//initialise_monitor_handles();
 
 
 	RTC_time_t current_time;
