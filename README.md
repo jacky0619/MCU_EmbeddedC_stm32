@@ -10,8 +10,19 @@ Microcontroller and Embedded Driver
     [IDE link](https://www.st.com/en/development-tools/stm32cubeide.html) 
 ## Documents 
 - Microcontroller
-    * [reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf)
-    * [data sheet](https://www.st.com/resource/en/datasheet/dm00037051.pdf)
+    * [reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf)  
+        * Memory map  
+        ![](https://i.imgur.com/kHr8ysH.png)  
+        * RCC registers  
+        ![](https://i.imgur.com/ucI09eJ.png)  
+    * [data sheet](https://www.st.com/resource/en/datasheet/dm00037051.pdf) 
+        * block diagram  
+        ![](https://i.imgur.com/YoE4rib.png)  
+        * Memory mapping  
+        ![](https://i.imgur.com/AUvGqyi.png)  
+        * Alternate function mapping  
+        ![](https://i.imgur.com/BatF41p.png)  
+
 - Discovery board
     * [board brief](https://www.st.com/resource/en/data_brief/stm32f4discovery.pdf)
     * [user manual](https://www.st.com/resource/en/user_manual/dm00039084-discovery-kit-with-stm32f407vg-mcu-stmicroelectronics.pdf)
@@ -116,12 +127,30 @@ Microcontroller and Embedded Driver
 1
 1
 ## clock_tree 
-1 
-1
-1
-1
-1
 
+> In the [reference manual](https://www.st.com/resource/en/reference_manual/dm00031020-stm32f405-415-stm32f407-417-stm32f427-437-and-stm32f429-439-advanced-arm-based-32-bit-mcus-stmicroelectronics.pdf)  
+![](https://i.imgur.com/DBOEi40.png)
+
+* Three different clock sources can be used to drive the system clock (SYSCLK):
+    * **RC Oscillator**(**internal** to the MCU) in all modern microcontrollers come inside the microcontroller itself.
+    * **Crystal Oscillar** (**external** to the MCU) is nothing but an external component, which you have to connect for the microcontroller.
+    * **PLL** (Phase Locked Loop) (**Internal** to the MCU) is also implemented inside the microcontroller, so we generate **higher frequency clock** by taking lower frequency clock as an input.
+
+* **HSI** (High speed internal): RC oscillator is called as HSI (High speed internal).
+![](https://i.imgur.com/fBGldGW.png)
+
+
+* **HSE** (High speed external): Crystal oscillator is called HSE (High speed external)
+![](https://i.imgur.com/bXIR6dP.png)
+
+
+* We can see the clock information in IDE in **Clock Configuration**.  
+![](https://i.imgur.com/AHcRn5k.png)
+
+1
+1
+1
+1
 1
 1
 
@@ -162,20 +191,14 @@ Microcontroller and Embedded Driver
 1
 1
 ## RTC_on_LCD 
-1. connections
-![](https://i.imgur.com/MJTt0ob.jpg)
+* references
+    * [ds1307 datasheet](https://datasheets.maximintegrated.com/en/ds/DS1307.pdf)  
+    ![](https://i.imgur.com/p9OJJlg.png)  
+
+1. Connections
+![](https://i.imgur.com/MJTt0ob.jpg)  
 2. 
 5. Then we can see the current time and current date messeges setting in semihosting. 
-![](https://i.imgur.com/wcXIygV.png)
-
-1
-1
-1
-1
-
-1
-1
-1
-
-11
-1
+![](https://i.imgur.com/wcXIygV.png)  
+6. Practical connections with STM32F407, LCD, DS1307 and 10K potentiometer
+![](https://i.imgur.com/R0wCf6T.jpg)
