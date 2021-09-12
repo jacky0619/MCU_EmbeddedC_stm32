@@ -40,7 +40,6 @@ Microcontroller and Embedded Driver
 | Vector table      |                         |[Vector table](#Vector_table)   |
 | GPIO              |                         |[GPIO](#GPIO)                   |
 | SPI               |                         |[SPI](#SPI)                     |
-| I2C               |                         |[I2C](#I2C)                     |
 | UART              |                         |[UART](#UART)                   |
 | RTC on LCD        |                         |[RTC on LCD](#RTC_on_LCD)       |
 
@@ -164,6 +163,7 @@ Microcontroller and Embedded Driver
 * All interrupts including the core exceptions are managed by the NVIC.
 
 ## GPIO
+* **GPIO**  stand for **general purpose Input Output**.
 * **GPIO input mode with **pull-up/down** state**
     * There are **configuration registers** for every GPIO port which enables you to handle internal pull up or pull down resistors.
     ![](https://i.imgur.com/7NmFx07.jpg)
@@ -191,31 +191,37 @@ Microcontroller and Embedded Driver
     ![](https://i.imgur.com/JdxEpVP.png)
  
 ## SPI
-1
-1
-1
-1
-1
-11
-1
-1
-## I2C
-1
-1
-1
-1
-1
-11
-1
+* SPI stands for **Serial Peripheral interface**.
+* SPI is a protocol which is used for serial data communication between **one master and a couple of slave devices**.
+* Typically use of SPI is actually to gather data from the sensor at **higher frequencies**.
+![](https://i.imgur.com/YmY7TLt.png)
+[image reference](https://www.udemy.com/course/mastering-microcontroller-with-peripheral-driver-development/)
+* MOSI of master is connected to MOSI of slave, the clock pins are connected, and the MISO of slave is connected to the MISO of master
+![](https://i.imgur.com/VlI1BUP.png)
+[image reference](https://www.udemy.com/course/mastering-microcontroller-with-peripheral-driver-development/)
+
+* **Full duplex communication**
+     ![](https://i.imgur.com/y4eXYtY.png)
+     [image reference](https://www.udemy.com/course/mastering-microcontroller-with-peripheral-driver-development/)
+* **Half-duplex communication**
+    ![](https://i.imgur.com/dhkz5c8.png)
+* **Simplex communication**
+     ![](https://i.imgur.com/BmGqTHe.png)
+* **SPI block diagram**
+![](https://i.imgur.com/YtwFyqB.png)
+
 ## UART
-1
-1
-1
-1
-1
-11
-1
-1
+* **UART** stands for **universal asynchronous receiver transmitter**, whereas **USART** stands for **universal synchronous, asynchronous receiver transmitter**. 
+* **UART** supports **only asynchronous** mode whereas **USART** supports **both** synchronous as well as asynchronous modes.
+* **UART pins**
+    * We **receive data** into the UART module over **RX pin** and we **transmit data** out of the UART module over **TX**. 
+    *  **CTS** which stands for **Clear To Send**, it's an active low pin. When hardware flow control is used, the data transmission on the **TX line**.
+    *  **RTS stands** for **Request To Send**. It is also an active low pin. The device uses this line to **inform the other device that it needs a data**.
+
+happens only if the CTS pin is pulled low.
+![](https://i.imgur.com/K63Y5ku.png)
+
+
 ## RTC_on_LCD 
 * references
     * [ds1307 datasheet](https://datasheets.maximintegrated.com/en/ds/DS1307.pdf)  
@@ -224,8 +230,8 @@ Microcontroller and Embedded Driver
 1. Connections
 ![](https://i.imgur.com/MJTt0ob.jpg)  
 2. 
-5. Then we can see the current time and current date messeges setting in semihosting. 
+3. Then we can see the current time and current date messeges setting in semihosting. 
 ![](https://i.imgur.com/wcXIygV.png)  
-6. Practical connections with STM32F407, LCD, DS1307 and 10K potentiometer
+4. Practical connections with STM32F407, LCD, DS1307 and 10K potentiometer
 ![](https://i.imgur.com/R0wCf6T.jpg)
 
