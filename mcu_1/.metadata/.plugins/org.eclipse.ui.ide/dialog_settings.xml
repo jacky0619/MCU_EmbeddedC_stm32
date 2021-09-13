@@ -17,6 +17,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\STM32\MCU1_course\mcu_1\005_HSI_Measurement"/>
 			<item value="C:\STM32\MCU1_course\mcu_1\stm32f4xx_drivers"/>
 			<item value="C:\STM32\MCU1_course\mcu_1\001_helloworld"/>
 		</list>
