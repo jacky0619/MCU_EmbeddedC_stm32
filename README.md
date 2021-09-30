@@ -91,16 +91,16 @@ Microcontroller and Embedded Driver
 2. **Expression and variables windows**  
 ![](https://i.imgur.com/rn9TTKB.png)  
 <br> 
-**variables windows**  
+3. **variables windows**  
 ![](https://i.imgur.com/fufKxvV.png)  
 <br>
-**expressions windows**  
+4. **expressions windows**  
 ![](https://i.imgur.com/4uvO40o.png)  
-4. **Memory browser**  
+5. **Memory browser**  
 ![](https://i.imgur.com/3yaXtNt.png)  
 <br>
 ![](https://i.imgur.com/LWNSuyy.png)  
-5. **Disassembly**  
+6. **Disassembly**  
 ![](https://i.imgur.com/g7yL56r.png)  
 
 
@@ -115,11 +115,13 @@ Microcontroller and Embedded Driver
 2. USB logic analyzers are **low-cost solution** to your digital oscilloscope.
 3. It is a **debugging hardware** which is used to **trace various signals** of the microcontroller peripherals such as I2C, SPI, UART and other peripherals.
 4. This is actually **8 channel, 24 MHz**, so that means the maximum signal frequency should be within 24 MHz.
-5. 
+
 ## Bus_interface 
 * The processor and the peripherals they actually talk via the **bus interfaces**.  
 * The processor contains three external **Advanced High-performance Bus (AHB)**-Lite bus interfaces and one **Advanced Peripheral Bus (APB) interface**.
+
 <br>
+
 ![](https://i.imgur.com/bgGtLbg.png)
 
 - I-BUS: Instruction Buses
